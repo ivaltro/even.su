@@ -1,0 +1,116 @@
+@media screen and (min-width: 575px) and (max-width: 768px) {
+    /* _____________________
+
+    Глобальные
+_____________________ */
+
+    .body {
+        padding-top: 50px;
+    }
+
+    /* _____________________
+
+    Скроллбар
+_____________________ */
+
+    /* ::-webkit-scrollbar {
+    width: 3px;
+}  */
+    /* _____________________
+
+    Шапка
+_____________________ */
+
+    header {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .header {
+        height: 45px;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .header__nav {
+        gap: 20px;
+    }
+
+    .header__logo {
+        width: 80px;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__nav-item_active::after {
+        bottom: -12px;
+    }
+
+    /* _____________________
+
+    Подвал
+_____________________ */
+
+    .footer,
+    .footer__content {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .wrap {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .scroll-up {
+        right: 20px;
+        bottom: 70px;
+    }
+
+    /* _____________________
+
+    Выпадающий список
+_____________________ */
+
+    .custom-select {
+        font-size: 16px;
+        /* bottom: 22px; */
+
+    }
+
+    .select-text {
+        padding: 6px 0;
+        gap: 2px;
+    }
+
+    .select-options li {
+        padding: 6px;
+    }
+    .select-options {
+        padding: 1px;
+    }
+    .select-arrow {
+        width: 10px;
+        height: 7px;
+    }
+
+    .icon-globe-02:before {
+        margin-right: 3px;
+    }
+
+    /* _____________________
+
+    Выбор языка на мобильном устройстве
+
+_____________________ */
+
+    .header__lng {
+        display: none;
+    }
+}

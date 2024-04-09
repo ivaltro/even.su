@@ -1,0 +1,218 @@
+@media screen and (min-width: 1400px) {
+    /* _____________________
+
+    Отступы
+_____________________ */
+
+    .link_lifting {
+        position: relative;
+        bottom: 3px;
+    }
+
+    .card__title,
+    .card__geo,
+    .card__phone,
+    .card__e-mail {
+        margin-bottom: 20px;
+    }
+
+    .wrapper__phone-and-contact {
+        gap: 15%;
+    }
+
+    .content-wrap {
+        margin: 60px 0;
+    }
+
+/* _____________________
+
+    Карточка
+_____________________ */
+
+    .card__scroll,
+    .container__map {
+        height: 65vh;
+    }
+
+    .card {
+        padding: 35px 35px;
+        background-color: white;
+
+    }
+
+    /* .wrapper__card {
+        margin-top: 20px;
+    } */
+    .card__scroll {
+        padding: 1px 4px 1px 0;
+        overflow: hidden;
+        overflow: scroll;
+        overflow-x: hidden;
+        /* height: 576px; */
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+/* _____________________
+
+    Заголовок
+_____________________ */
+
+    .card__title-heading {
+        font-size: 24px;
+        margin-bottom: 7px;
+    }
+
+/* _____________________
+
+    Иконки
+_____________________ */
+
+    .card__icon-container {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .card__geo-icon {
+        width: 20px;
+    }
+
+    .card__e-mail-icon {
+        width: 25px;
+    }
+
+    .card__phone-icon {
+        width: 20px;
+    }
+
+/* _____________________
+
+    Время работы
+_____________________ */
+
+    .card__geo-time {
+        font-size: 14px;
+    }
+
+/* _____________________
+
+    Адрес
+_____________________ */
+
+    .card__geo-adress {
+        width: 50px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .card__geo-icon-metro,
+    .card__geo-name-metro {
+        margin-right: 6px;
+    }
+
+    .card__geo-adress,
+    .card__geo-time {
+        margin-bottom: 7px;
+    }
+
+    .card__geo-name-metro {
+        font-size: 16px;
+    }
+
+    .card__geo-icon-metro {
+        height: 15px;
+    }
+
+/* _____________________
+
+    Телефон и эл. почта
+_____________________ */
+
+    .card__phone,
+    .card__e-mail,
+    .card__title-site {
+        font-size: 16px;
+    }
+
+    .card__phone_margin-desk {
+        margin-right: 25px;
+    }
+/* _____________________
+
+    Разделитель
+_____________________ */
+
+    .separator {
+        height: 100%;
+        margin: 0 1px;
+    }
+
+/* _____________________
+
+    Кнопка
+_____________________ */
+
+    .card__button {
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+
+/* _____________________
+
+    Размеры логотипов карточек
+_____________________ */
+
+    .card__title-logo_even {
+        width: 35px;
+    }
+
+    .card__title-logo_shaft {
+        width: 26px;
+    }
+
+    .card__title-logo_titan {
+        width: 22px;
+    }
+
+/* _____________________
+
+    Пагинация
+_____________________ */
+
+    .pagination__off {
+        display: none;
+    }
+
+    .pagination {
+        padding: 20px 0px;
+    }
+
+    .pagination__item {
+        margin-right: 11px;
+    }
+
+    .pagination__item_active {
+        height: 15px;
+    }
+
+    .pagination__item_disabled {
+        height: 10px;
+    }
+
+    .pagination__item_last {
+        margin-right: 0px;
+    }
+
+/* _____________________
+
+    Карта
+_____________________ */
+
+    /* .container__map {
+        height: 576px;
+    } */
+    .map_mobile {
+        display: none;
+    }
+}

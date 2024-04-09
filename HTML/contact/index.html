@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+maximum-scale=1.0, user-scalable=no">
+    <meta name="yandex-verification" content="a42bc3e14ca10a52" />
+    <link rel="stylesheet" href="/CSS/common_styles/common.css">
+    <link rel="stylesheet" href="/CSS/iconmoon.css">
+    <link rel="stylesheet" href="/CSS/contact_styles/contact.css">
+    <link href="/CSS/bootstrap-grid.css" rel="stylesheet">
+    <title>Контакты</title>
+</head>
+
+<body class="body">
+    <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=44275cd5-0575-4346-a5a9-7338ba0e5d5f&lang=ru_RU&onload=load_map"></script>
+    <div class="page">
+        <!-- Шапка -->
+        <div></div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-">
+                        <div class="header">
+                            <a class="main-link" href="/"><img class="header__logo" src="/images/icon/headerLogo.svg"
+                                    alt="КГ ЭВЭН"></a>
+                            <div class="header__burger">
+                                <span></span>
+                            </div>
+                            <nav class="header__menu">
+                                <ul class="header__nav">
+                                    <li class="header__nav-item header__nav-item_hover"><a href="/"
+                                            class="header__nav-item-link header__nav-item-link_hover">О нас</a></li>
+                                    <li class="header__nav-item header__nav-item_active"><a href="../contact/"
+                                            class="header__nav-item-link header__nav-item-link_active header__nav-item-link_hover">Контакты</a>
+                                    </li>
+                                    <li class="header__nav-item header__nav-item_hover"><a href="../charity/"
+                                            class="header__nav-item-link header__nav-item-link_hover">Соц. проекты</a>
+                                    </li>
+                                </ul>
+                                <div class="custom-select">
+                                    <div class="icon-globe-02 select-text">
+                                        <span>Ru</span>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                    <ul class="select-options">
+                                        <li><a href="./">Ru</a></li>
+                                        <li><a href="./eng/">Eng</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="icon-globe-02 header__lng">
+                                    <li class="active"><a class="button-link accent" href="./">Ru</a></li>
+                                    <li><a class="button-link accent" href="./eng/">Eng</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Содержимое-->
+
+        <main class="content content-wrap">
+            <!-- Карточка -->
+            <div class="container">
+                <div class="row content_screen_mobile">
+                    <!-- Карты -->
+                    <div class="col-lg-6 col-xl-7 col-md-6 col-sm-12 offset-sm-0 offset-md-0 offset-lg-0 padding-clear">
+                        <div id="map" class="container__map">
+                            <div id="content__map" class="map">
+
+                            </div>
+                            <!-- <div class="map">
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A07b76f639369ad8aa6a6c00ba05642808126451f654df4a7fb69f7801d59bdf5&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                            </div>                         -->
+                        </div>
+                    </div>
+                    <!-- Карточка -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5 offset-sm-0 offset-md-0 offset-lg-0">
+                        <div id="card" class="card__scroll">
+                            <!--Карточка Москва-->
+                            <div class="wrapper wrapper__card first-item">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_even"
+                                                src="/images/icon/logo_gc_even.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Офис продаж «Эвэн Truck» в <span
+                                                    class="accent">г. Москве</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="https://even-truck.ru"
+                                                    target="_blank">https://even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">г. Москва, ул. Ленинская Слобода, д. 26 (вход
+                                                в БЦ «Омега-2», корпус А), этаж 4, помещ. 32/23 (офис 424)</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container align-items-center">
+                                                <img class="card__geo-icon-metro" src="/images/icon/Metro_green.svg"
+                                                    alt="metro_green">
+                                                <img class="card__geo-icon-metro" src="/images/icon/Metro__MCC.svg"
+                                                    alt="metro_green">
+                                                <div class="card__geo-name-metro">Автозаводская</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting" href="TEL:+74953246956">+7 (800)
+                                                    200-16-12</a></div>
+                                        </div>
+                                        <!-- <div class="separator">&#160;</div> -->
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:info@even-truck.ru">info@even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="1">
+                                        <a><button class="card__button">Выбрать этот офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Карточка Бронницы-->
+                            <div class="wrapper wrapper__card">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_even"
+                                                src="/images/icon/logo_gc_even.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Офис продаж и установочный центр «Эвэн
+                                                Truck» <span class="accent">в г. Бронницы</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="https://even-truck.ru"
+                                                    target="_blank">https://even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">Московская область, г. Бронницы,
+                                                ул. Льва Толстого, д. 37</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container">
+                                                <!-- <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_green.svg" alt="metro_green">
+                                                            <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro__MCC.svg" alt="metro_green">
+                                                            <div class="card__geo-name-metro">-</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting" href="TEL:+74993223710">+7 (499)
+                                                    322-37-10</a></div>
+                                        </div>
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:info@even-truck.ru">info@even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Кнопка-->
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="2">
+                                        <a><button class="card__button">Выбрать этот офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Карточка СПБ-->
+                            <div class="wrapper wrapper__card">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_even"
+                                                src="/images/icon/logo_gc_even.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Представительство по <span
+                                                    class="accent">Санкт-Петербургу, Ленинград. обл. и СЗФО</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="https://even-truck.ru"
+                                                    target="_blank">https://even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">Ленинградская область, Тосненский район, гп.
+                                                Федоровское, Почтовая ул. 49 А, корпус 2</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container align-items-center">
+                                                <img class="card__geo-icon-metro" src="/images/icon/Metro_SBP_Red.svg"
+                                                    alt="metro_green">
+                                                <div class="card__geo-name-metro">Академическая</div>
+                                                <img class="card__geo-icon-metro"
+                                                    src="/images/icon/Metro_SBP_Orange.svg" alt="metro_green">
+                                                <div class="card__geo-name-metro">Ладожская</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting" href="TEL:+78122007602">+7 812
+                                                    200-76-02</a></div>
+                                        </div>
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:info@even-truck.ru">info@even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Кнопка-->
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="3">
+                                        <a><button class="card__button">Выбрать этот офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Карточка Краснодар-->
+                            <div class="wrapper wrapper__card">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_even"
+                                                src="/images/icon/logo_gc_even.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Представительство по <span
+                                                    class="accent">Краснодарскому краю и СКФО</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="https://even-truck.ru"
+                                                    target="_blank">https://even-truck.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">Краснодарский край, г. Горячий Ключ,
+                                                Промышленный пер., д. 1</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container">
+                                                <!-- <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Red.svg" alt="metro_green">
+                                                                    <div class="card__geo-name-metro">Академическая</div>
+                                                                    <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Orange.svg" alt="metro_green">
+                                                                <div class="card__geo-name-metro">-</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting" href="TEL:+78612012305">+7 861
+                                                    201-23-05</a></div>
+                                        </div>
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:24@even.su">24@even.su</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Кнопка-->
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="4">
+                                        <a><button class="card__button">Выбрать этот офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Карточка Шафт-->
+                            <div class="wrapper wrapper__card">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_shaft"
+                                                src="/images/icon/logo_shaft.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Офис продаж «Шафт» <span class="accent">в г.
+                                                    Москве</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="http://shaft-gear.ru/"
+                                                    target="_blank">http://shaft-gear.ru/</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">г. Москва, ул. Ленинская Слобода, 26, стр. 5,
+                                                БЦ Симонов плаза, этаж 2, офис 2404</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container">
+                                                <!-- <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Red.svg" alt="metro_green">
+                                                                        <div class="card__geo-name-metro">Академическая</div>
+                                                                        <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Orange.svg" alt="metro_green">
+                                                                        <div class="card__geo-name-metro">-</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting" href="TEL:+74955131035">+7 (495)
+                                                    513-10-35</a></div>
+                                        </div>
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:info@shaft-gear.ru">info@shaft-gear.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Кнопка-->
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="5">
+                                        <a><button class="card__button">Выбрать этот офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Карточка Титан-->
+                            <div class="wrapper wrapper__card">
+                                <div class="card">
+                                    <!--Заголовок-->
+                                    <div class="card__title">
+                                        <div class="card__icon-container">
+                                            <img class="card__title-logo card__title-logo_titan"
+                                                src="/images/icon/logo_titan.svg" alt="logo_gc_even">
+                                        </div>
+                                        <div class="card__container col">
+                                            <h1 class="card__title-heading">Офис «Титан» в <span class="accent">г.
+                                                    Бронницы</span></h1>
+                                            <div class="card__title-site"><a class="accent link"
+                                                    href="https://titanrace.ru/"
+                                                    target="_blank">https://titanrace.ru/</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Адрес, метро-->
+                                    <div class="card__geo">
+                                        <div class="card__icon-container">
+                                            <img class="card__geo-icon" src="/images/icon/icon_geo.svg"
+                                                alt="card__geo-icon">
+                                        </div>
+                                        <div class="card__container col">
+                                            <div class="card__geo-adress">Московская область, г. Бронницы, ул. Льва
+                                                Толстого, д. 37</div>
+                                            <div class="card__geo-time">Пн-Пт: 9:00 - 21:00</div>
+                                            <div class="card__container">
+                                                <!-- <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Red.svg" alt="metro_green">
+                                                                            <div class="card__geo-name-metro">Академическая</div>
+                                                                            <img class="card__geo-icon-metro" src="/HTML/images/icon/Metro_SBP_Orange.svg" alt="metro_green">
+                                                                            <div class="card__geo-name-metro">-</div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper__phone-and-contact">
+                                        <!--Телефон-->
+                                        <!-- <div class="card__phone align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__phone-icon" src="/images/icon/icon_phone.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="accent link_lifting" href="#">-</a></div>
+                                        </div> -->
+                                        <!-- Эл. почта-->
+                                        <div class="card__e-mail align-items-center">
+                                            <div class="card__icon-container">
+                                                <img class="card__e-mail-icon" src="/images/icon/logo_mail.svg"
+                                                    alt="card__phone-icon">
+                                            </div>
+                                            <div class="card__container align-items-center"><a
+                                                    class="link accent link_lifting"
+                                                    href="mailto:info@titanrace.ru">info@titanrace.ru</a></div>
+                                        </div>
+                                    </div>
+                                    <!--Кнопка-->
+                                    <div class="wrapper button-wrapper partner_card view_on_map" data-partner_id="6">
+                                        <a><button class="card__button card__button_active">Выбрать этот
+                                                офис</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer__content">
+                            <div class="wrap">
+                                <div class="footer__text">2023 © ООО «Эвэн» — Группа компаний</div>
+                                <!-- <div class="footer__text">+7 (495) 487-76-99</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="scroll-up">
+            <div class="scroll-up__content"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="/JS/common_script/script.js"></script>
+    <script src="/JS/contact_script/script.js"></script>
+</body>
+
+</html>

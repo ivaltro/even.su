@@ -1,0 +1,121 @@
+@media screen and (min-width: 1200px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text-block__heading {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .text-block__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .text-block {
+        width: 480px;
+        padding: 40px;
+    }
+
+    .banner__button-wrap {
+        gap: 10.5%;
+    }
+
+    .banner__button {
+        padding: 3% 5%;
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 15px;
+    }
+
+    .download__img {
+        width: 24px;
+    }
+
+    .slider__wrapper {
+        height: 178px;
+    }
+
+    .slider__dot {
+        width: 164px;
+        height: 124px;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        width: 65px;
+        height: 65px;
+    }
+
+    .slider__btn-prev img,
+    .slider__btn-next img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .slider__img {
+        height: 549px;
+    }
+
+
+    .active-dot {
+        width: 256px;
+        height: 178px;
+    }
+
+    .active-dot::before {
+        content: '';
+        width: 48px;
+        height: 24px;
+        left: 50%;
+        transform: translate(-50%, -96%);
+        position: absolute;
+        background-color: #ffffff;
+        clip-path: polygon(50.42% 2.39%, 0% 100%, 100% 100%);
+    }
+
+    .active-dot::after {
+        content: none;
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/xl/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/xl/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/xl/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/xl/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/xl/TITAN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-6 {
+        background-image: url(/images/about_us/banner/xl/TITAN-BIKE.jpg);
+    }
+
+    .mobile-block {
+        display: none;
+    }
+
+    .desk-block {
+        display: block;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        display: block;
+    }
+}

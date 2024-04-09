@@ -1,0 +1,815 @@
+.mobile-block {
+    width: 100%;
+    background-color: #4E8DC2;
+}
+
+@font-face {
+    font-style: light;
+    font-weight: 300;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-light.ttf");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-roman.ttf");
+}
+
+@font-face {
+    font-style: medium;
+    font-weight: 500;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-medium.ttf");
+
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: OpenGost;
+    src: url(/fonts/OpenGostTypeA-Regular.ttf);
+}
+
+.page {
+    font-family: Helveticaneuecyr;
+}
+
+/* XS */
+@media screen and (max-width: 575px) {
+    .slider__img {
+        height: 240px;
+    }
+
+    .slider__wrapper {}
+
+    .mobile-block {
+        background-image: url(/images/about_us/banner/sm-lg/background_for_text-block.jpg);
+        background-repeat: no-repeat;
+        background-color: #D0E9FF;
+    }
+
+    .mobile-block .text-block {
+        position: relative;
+        bottom: 42px;
+    }
+
+    .text-block {
+        padding: 35px 35px;
+    }
+
+    .text-block__heading {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .text-block__text {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 3%;
+    }
+
+    .banner__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 4% 6%;
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 15px;
+    }
+
+    .download__img {
+        width: 28px;
+    }
+
+    .banner__button-wrap {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        gap: 18px;
+    }
+
+    /* .slider__dot {
+        height: 49px;
+        width: 76px; 
+    }
+    .active-dot {
+        height: 86px;
+        width: 122px;
+    } */
+    .slider__dot {
+        min-width: calc(50px + (90 - 50) * ((100vw - 320px) / (576 - 320)));
+        /* max-width: calc(40px + (78 - 40) * ((100vw - 320px) / (576 - 320))); */
+        min-height: calc(32px + (58 - 32) * ((100vw - 320px) / (576 - 320)));
+        /* max-height: calc(26px + (49 - 26) * ((100vw - 320px) / (576 - 320))); */
+        flex-shrink: 0;
+    }
+
+    .active-dot {
+        min-width: calc(79px + (141 - 79) * ((100vw - 320px) / (576 - 320)));
+        min-height: calc(48px + (88 - 48) * ((100vw - 320px) / (576 - 320)));
+    }
+
+    .slider__wrapper {
+        min-height: calc(48px + (88 - 48) * ((100vw - 320px) / (576 - 320)));
+    }
+
+    .active-dot::before {
+        content: none;
+    }
+
+    .active-dot::after {
+        content: '';
+        width: 18%;
+        height: 12%;
+        left: 50%;
+        bottom: 0px;
+        transform: rotate(180deg) translate(50%, -90%);
+        position: absolute;
+        background-color: #ffffff;
+        clip-path: polygon(50.42% 2.39%, 0% 100%, 100% 100%);
+    }
+
+    .slider__dot-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/xs/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/xs/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/xs/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/xs/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/xs/TITAN-BIKE.jpg);
+    }
+
+    .mobile-block {
+        display: block;
+    }
+
+    .desk-block {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        display: none;
+    }
+}
+
+/* SM */
+@media screen and (min-width: 575px) {
+
+    .slider {
+        /* max-width: 1920px; */
+        background-color: #4E8DC2;
+    }
+
+    .slider__img {
+        height: 240px;
+    }
+
+    .slider__wrapper {
+        /* height: 76px; */
+    }
+
+    .mobile-block {
+        background-image: url(/images/about_us/banner/sm-lg/background_for_text-block.jpg);
+        background-repeat: no-repeat;
+        background-color: #D0E9FF;
+    }
+
+    .mobile-block .text-block {
+        position: relative;
+        bottom: 42px;
+    }
+
+    .text-block {
+        padding: 36px 45px;
+    }
+
+    .text-block__heading {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .text-block__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 3%;
+    }
+
+    .banner__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 4% 6%;
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 15px;
+    }
+
+    .download__img {
+        width: 28px;
+    }
+
+    .banner__button-wrap {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        gap: 18px;
+    }
+
+    .slider__wrapper {
+        height: 86px;
+    }
+
+    .slider__dot {
+        height: 49px;
+        width: 76px;
+    }
+
+    .active-dot {
+        height: 86px;
+        width: 122px;
+    }
+
+    .active-dot::before {
+        content: none;
+    }
+
+    .active-dot::after {
+        content: '';
+        width: 18%;
+        height: 12%;
+        left: 50%;
+        bottom: 0px;
+        transform: rotate(180deg) translate(50%, -90%);
+        position: absolute;
+        background-color: #ffffff;
+        clip-path: polygon(50.42% 2.39%, 0% 100%, 100% 100%);
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/sm-lg/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/sm-lg/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/sm-lg/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/sm-lg/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/sm-lg/TITAN-BIKE.jpg);
+    }
+
+    .mobile-block {
+        display: block;
+    }
+
+    .desk-block {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        display: none;
+    }
+}
+
+/* MD */
+@media screen and (min-width: 768px) {
+    .slider {
+        /* max-width: 1920px; */
+        background-color: #4E8DC2;
+    }
+
+    .slider__img {
+        height: 378px;
+    }
+
+    .slider__wrapper {
+        /* height: 106px; */
+    }
+
+    .mobile-block {
+        background-image: url(/images/about_us/md/background_for_text-block.jpg);
+    }
+
+    .mobile-block .text-block {
+        position: relative;
+        bottom: 63px;
+    }
+
+    .text-block {
+        padding: 55px;
+    }
+
+    .text-block__heading {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 26px;
+    }
+
+    .text-block__text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 2%;
+    }
+
+    .banner__button {
+        width: unset;
+        padding: 3% 5%;
+        font-size: 20px;
+    }
+
+    .download {
+        font-size: 18px;
+    }
+
+    .download__img {
+        width: 28px;
+    }
+
+    .banner__button-wrap {
+        flex-direction: row;
+        justify-content: center;
+        gap: 9%;
+    }
+
+    .slider__wrapper {
+        height: 116px;
+    }
+
+    .slider__dot {
+        width: 104px;
+        height: 66px;
+    }
+
+    .active-dot {
+        width: 165px;
+        height: 116px;
+    }
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+    .slider {
+        /* max-width: 1920px; */
+        background-color: #4E8DC2;
+    }
+
+    .slider__img {
+        height: 378px;
+    }
+
+    .slider__wrapper {
+        height: 141px;
+    }
+
+    .mobile-block {
+        background-image: url(/images/about_us/banner/lg/background_for_text-block.jpg);
+    }
+
+    /* .banner__button {
+        width: unset;
+        padding: 3% 5%;
+        font-size: 20px;
+    } */
+    .banner__button-wrap {
+        gap: 15%;
+    }
+
+    .download {
+        font-size: 18px;
+    }
+
+    .download__img {
+        width: 30px;
+    }
+
+    .slider__dot {
+        width: 140px;
+        height: 89px;
+    }
+
+    .active-dot {
+        width: 200px;
+        height: 141px;
+    }
+}
+
+/* XL */
+@media screen and (min-width: 1200px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .slider {
+        /* max-width: 1920px; */
+        background-color: #4E8DC2;
+    }
+
+    .slider__img {
+        height: 549px;
+    }
+
+    .text-block__heading {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .text-block__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .text-block {
+        width: 480px;
+        padding: 40px;
+    }
+
+    .banner__button-wrap {
+        gap: 10.5%;
+    }
+
+    .banner__button {
+        padding: 3% 5%;
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 15px;
+    }
+
+    .download__img {
+        width: 24px;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        width: 65px;
+        height: 65px;
+    }
+
+    .slider__btn-prev img,
+    .slider__btn-next img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .slider__dot {
+        width: 165px;
+        height: 106px;
+    }
+
+    .slider__wrapper {
+        height: 164px;
+    }
+
+    .active-dot {
+        width: 256px;
+        height: 164px;
+    }
+
+    .active-dot::before {
+        content: '';
+        width: 48px;
+        height: 24px;
+        left: 50%;
+        transform: translate(-50%, -96%);
+        position: absolute;
+        background-color: #ffffff;
+        clip-path: polygon(50.42% 2.39%, 0% 100%, 100% 100%);
+    }
+
+    .active-dot::after {
+        content: none;
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/xl/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/xl/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/xl/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/xl/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/xl/TITAN-BIKE.jpg);
+    }
+
+    .mobile-block {
+        display: none;
+    }
+
+    .desk-block {
+        display: block;
+    }
+
+    .slider__btn-prev,
+    .slider__btn-next {
+        display: block;
+    }
+}
+
+/* XXL */
+@media screen and (min-width: 1400px) {
+    .slider__img {
+        height: 640px;
+    }
+
+    .slider__wrapper {
+        height: 190px;
+    }
+
+    .text-block__heading {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .text-block__text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .text-block {
+        width: 560px;
+        padding: 48px;
+    }
+
+    .banner__button {
+        padding: 3% 6%;
+        font-size: 18px;
+    }
+
+    .download {
+        font-size: 17px;
+    }
+
+    .slider__dot {
+        width: 193px;
+        height: 123px;
+        background-color: #4E8DC2;
+    }
+
+    .active-dot {
+        height: 190px;
+        width: 298px;
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/xxl/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/xxl/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/xxl/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/xxl/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/xxl/TITAN-BIKE.jpg);
+    }
+
+}
+
+/* .content {
+    display: flex;
+}
+.slider {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.slider__line {
+    display: flex;
+    align-items: center;
+    transform: translateX(-1920px);
+    z-index: 3;
+}
+.slider__img {
+    top: 200px;
+    display: block;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+}
+.slider__btn-prev {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    z-index: 0;
+}
+.slider__btn-next {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    z-index: 0;
+}
+.slider__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.slider__dot {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+    flex-grow: 1;
+    transition-duration: 0.5s;
+    transform: scaleX(99.5%);
+    background-color: #FFFFFF;
+}
+.slider__dot:hover {
+    opacity: 1;
+    transform: scale(101%);
+}
+.active-dot {
+    filter: drop-shadow(0px 0px 3px rgba(128, 128, 128, 0.2));
+    transform: scaleX(101%);
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+.test {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+.mobile-block {
+
+}
+.mobile-block .text-block {
+    display: none;
+}
+.text-block.active-text {
+    display: block;
+    animation-name: opacity;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+.text-block__heading {
+    font-weight: 500;
+    color: #2271B3;
+}
+.text-block__text {
+    font-weight: 300;
+}
+.text-block {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.banner__button-wrap {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+}
+.banner__button {
+    background-color: #2271B3;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.banner__button:hover {
+    outline: 1px solid #2271B3;
+    background-color: #FFFFFF;
+    color: #2271B3;
+}
+
+.banner__button:active {
+    background-color: #1e639c;
+    color: #FFFFFF;
+}
+.download {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.download__link {
+    transition-duration: 0.2ms;
+}
+
+.download__link:hover {
+    color: #4E8DC2;
+}
+.overflow-y-visible {
+    overflow-y: visible;
+} 
+.slider__dot.pic-1 {
+    background-image: url(/images/about_us/selector/PNG/Logo_even_NotActive.jpg);
+}
+.slider__dot.pic-2 {
+    background-image: url(/images/about_us/selector/PNG/Logo_EvenTruck_NotActive.png);
+}
+.slider__dot.pic-3 {
+    background-image: url(/images/about_us/selector/PNG/Logo_Shaft_NotActive.png);
+}
+.slider__dot.pic-4 {
+    background-image: url(/images/about_us/selector/PNG/Logo_Titan_NotActive.png);
+}
+.slider__dot.pic-5 {
+    background-image: url(/images/about_us/selector/PNG/Logo_TitanBike_NotActive.png);
+}
+.slider__background {
+    background-color: #2271B3;
+    order: 0;
+    position: relative;
+    z-index: 5;
+}
+.slider__dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__dot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */

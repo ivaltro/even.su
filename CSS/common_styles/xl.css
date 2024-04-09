@@ -1,0 +1,90 @@
+@media screen and (min-width: 1200px) {
+    /* _____________________
+
+    Глобальные
+_____________________ */
+
+    .body {
+        padding-top: 100px;
+    }
+
+    /* _____________________
+
+    Шапка
+_____________________ */
+
+    header {
+        font-size: 32px;
+        height: 100px;
+    }
+
+    .header__menu {
+        gap: 50px;
+    }
+
+    .header__nav {
+        gap: 50px;
+    }
+
+    .header__logo {
+        width: 180px;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__nav-item_active::after {
+        bottom: -25px;
+    }
+
+    /* _____________________
+
+    Подвал
+_____________________ */
+
+    .footer,
+    .footer__content {
+        /* height: 11vh; */
+        height: 116px;
+        /* height: 133px; */
+        font-size: 16px;
+    }
+
+    .wrap {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .scroll-up {
+        right: 30px;
+        bottom: 120px;
+    }
+
+    /* _____________________
+
+    Выпадающий список
+_____________________ */
+
+    .custom-select {
+        font-size: 24px;
+    }
+
+    .select-text {
+        padding: 10px 0;
+        gap: 6px;
+    }
+    .select-options li {
+        padding: 10px;
+    }
+    .select-options {
+        padding: 4px;
+    }
+    .select-arrow {
+        width: 14px;
+        height: 10px;
+    }
+    .icon-globe-02:before {
+        margin-right: 4px;
+      }
+}

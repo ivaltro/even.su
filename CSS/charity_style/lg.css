@@ -1,0 +1,66 @@
+@media screen and (min-width: 992px) {
+
+    /* _____________________
+
+    Общие
+_____________________ */
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        gap: 14px;
+    }
+
+    .inner {
+        padding: 46px 54px;
+    }
+
+    /* _____________________
+
+    Вступительный блок
+_____________________ */
+
+    .in-general-block__img {
+        background-image: url(/images/social_project/in-general-block__img.jpg);
+    }
+
+    /* _____________________
+
+    Блок с табами
+_____________________ */
+    .tabs-triggers__logo_1 {
+        height: 54px;
+    }
+
+    .tabs-triggers__logo_2 {
+        height: 62px;
+    }
+
+    .tabs-triggers__item {
+        display: flex;
+        height: 96px;
+    }
+
+    .tabs-content__text {
+        width: 388px;
+    }
+
+    .tabs-content__img {
+        height: 340px;
+    }
+
+    .tabs-content__button-wrap {
+        margin-top: 28px;
+    }
+
+    .tabs-content__button {
+        font-size: 1rem;
+        display: inline-block;
+        padding: 3% 9%;
+    }
+}

@@ -1,0 +1,233 @@
+.mobile-block {
+    width: 100%;
+    background-color: #4E8DC2;
+}
+@font-face {
+    font-style: light;
+    font-weight: 300;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-light.ttf");
+}
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-roman.ttf");
+}
+@font-face {
+    font-style: medium;
+    font-weight: 500;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-medium.ttf");
+   
+}
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: OpenGost;
+    src: url(/fonts/OpenGostTypeA-Regular.ttf);
+}
+.page {
+    font-family: Helveticaneuecyr;
+}
+.content {
+    display: flex;
+}
+.slider {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    max-width: 1920px;
+    background-color: #4E8DC2;
+}
+.slider__line {
+    display: flex;
+    align-items: center;
+    transform: translateX(-1920px);
+    z-index: 3;
+}
+.slider__img {
+    top: 200px;
+    display: block;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+}
+.slider__btn-prev {
+    left: 3%;
+}
+.slider__btn-next {
+    right: 3%;
+}
+.slider__btn-prev:hover, .slider__btn-next:hover {
+    transform: translateY(-50%) scale(110%);
+}
+.slider__btn-prev:active, .slider__btn-next:active {
+    transform: translateY(-50%) scale(100%);
+}
+.slider__btn-prev, .slider__btn-next {
+    transition-duration: 0.3s;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    z-index: 0;
+}
+.slider__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.slider__dot {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+    flex-grow: 1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    background-color: #FFFFFF;
+    border-left: 1px solid rgb(221, 221, 221);
+}
+.slider__dot:hover {
+    opacity: 1;
+    transform: scale(101%);
+}
+.active-dot {
+    filter: drop-shadow(0px 0px 3px rgba(128, 128, 128, 0.2));
+    transform: scaleX(102%);
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+.slider__dot.active-dot {
+    border-left: none;
+}
+.test {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+.mobile-block {
+
+}
+.mobile-block .text-block {
+    display: none;
+}
+.text-block.active-text {
+    display: flex;
+    animation-name: opacity;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+.text-block__heading {
+    font-weight: 500;
+    color: #2271B3;
+}
+.text-block__text {
+    font-weight: 300;
+}
+.text-block {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    filter: drop-shadow(0px 0px 3px rgba(128, 128, 128, 0.2));
+}
+.banner__button-wrap {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+}
+.banner__button {
+    background-color: #2271B3;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.banner__button:hover {
+    outline: 1px solid #2271B3;
+    background-color: #FFFFFF;
+    color: #2271B3;
+}
+
+.banner__button:active {
+    background-color: #1e639c;
+    color: #FFFFFF;
+}
+.download {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.download__link {
+    transition-duration: 0.2ms;
+}
+
+.download__link:hover {
+    color: #4E8DC2;
+}
+.overflow-y-visible {
+    overflow-y: visible;
+} 
+.slider__dot.pic-1 {
+    background-image: url(/images/about_us/selector/logoEven.jpg);
+}
+.slider__dot.pic-2 {
+    background-image: url(/images/about_us/selector/logoEvenTruck.png);
+}
+.slider__dot.pic-3 {
+    background-image: url(/images/about_us/selector/logoShaft.png);
+}
+.slider__dot.pic-4 {
+    background-image: url(/images/about_us/selector/logoTitan.png);
+}
+.slider__dot.pic-5 {
+    background-image: url(/images/about_us/selector/logoTitanTruck.png);
+}
+.slider__dot.pic-6 {
+    background-image: url(/images/about_us/selector/logoTitanBike.png);
+}
+.slider__background {
+    background-color: #2271B3;
+    order: 0;
+    position: relative;
+    z-index: 5;
+}
+.slider__dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__dot-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

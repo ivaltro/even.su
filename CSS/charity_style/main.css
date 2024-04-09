@@ -1,0 +1,129 @@
+   /* _____________________
+
+    Общие
+_____________________ */
+
+   html {
+       font-size: 16px;
+   }
+
+   .content {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .text {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .text-block {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .accent {
+
+   }
+
+   .img-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+   }
+
+   /* _____________________
+
+    Вступительный блок
+_____________________ */
+   .in-general-block__text-block {
+       border: 1px solid #B0CCE2;
+   }
+
+   .in-general-block__img {
+       height: 100%;
+       width: 100%;
+       background-size: cover;
+       background-position: center center;
+   }
+
+   /* _____________________
+
+    Блок с табами
+_____________________ */
+
+   .tabs-content__item {
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+   }
+
+   .tabs-content__button {
+       background-color: #2271B3;
+       color: #FFFFFF;
+       font-weight: 500;
+       transition-duration: 0.2s;
+       cursor: pointer;
+   }
+
+   .tabs-content__button:hover {
+       outline: 1px solid #2271B3;
+       background-color: #FFFFFF;
+       color: #2271B3;
+   }
+
+   .tabs-triggers {
+       display: flex;
+   }
+
+   .tabs-triggers__wrap {
+       min-width: 50%;
+   }
+
+   .tabs-triggers__item {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-decoration: none;
+       border: 1px solid #B0CCE2;
+       background: linear-gradient(180deg, rgba(246, 251, 255, 0.20) 0%, rgba(146, 206, 255, 0.20) 100%), #F6FBFF;
+   }
+
+   .tabs-triggers__item:hover {
+       background: #F6FBFF;
+   }
+
+   .tabs-triggers__item:active {
+       box-shadow: 0px 0px 15px 8px rgba(0, 126, 222, 0.05) inset;
+       background-color: #F6FBFF;
+   }
+
+   .tabs-triggers__item--active,
+   .tabs-triggers__item--active:hover,
+   .tabs-triggers__item--active:active {
+       background: white;
+       border-bottom: 0px;
+       box-shadow: inset 0px 0px 0px 0px #2271B3;
+   }
+
+   .tabs-triggers__item--active:hover {
+       background: white;
+       border-bottom: 0px;
+       box-shadow: inset 0px 0px 0px 0px #2271B3;
+   }
+
+   .tabs-content {
+       border: 1px solid #B0CCE2;
+       border-top: 0px;
+   }
+
+   .tabs-content__item {
+       display: none;
+   }
+
+   .tabs-content__item--active {
+       display: flex;
+   }

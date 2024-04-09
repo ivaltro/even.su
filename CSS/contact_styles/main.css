@@ -1,0 +1,83 @@
+    /* _____________________
+
+    Глобальные
+_____________________ */
+
+html {
+    font-size: 8px;
+}
+
+    /* _____________________
+
+    Карточка
+_____________________ */
+
+.card {
+    width: 100%;
+    border: solid 0.5px #b0cce2;
+    position: relative;
+}
+.card__container {
+    display: flex;
+    height: 100%;
+}
+.wrapper__phone-and-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.card__title, .card__geo, .card__phone, .card__e-mail {
+    display: flex;
+    flex-direction: row;
+}
+.card__e-mail {
+    margin-bottom: 0px;
+    display: flex;
+}
+.card__geo-time {
+    color: #5B5B5B;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__button {
+    border: 1px solid #2271B3;
+    background-color: white; 
+    outline: none;
+    color: #2271B3;
+    padding: 1% 2%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    font-family: "Helveticaneuecyr";
+}
+.card__button_active, .card__button:hover {
+    background-color: #2271B3;
+    color: white;
+}
+.card__button-link {
+    text-decoration: none;
+}
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.separator {
+    height: 100%;
+    width: 1px;
+    background-color: #2271B3;
+}
+
+    /* _____________________
+
+    Карта
+_____________________ */
+
+.map {
+    height: 100%;
+}

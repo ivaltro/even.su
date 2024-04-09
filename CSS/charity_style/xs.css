@@ -1,0 +1,113 @@
+@media screen and (max-width: 575px) {
+    /* _____________________
+
+    Общие
+_____________________ */
+
+    .content-wrap {
+        gap: 32px;
+        margin: 32px 0;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 4.6%;
+    }
+
+    .text {
+        font-size: 1rem;
+        line-height: 1.125rem;
+        gap: 12px;
+    }
+
+    .inner {
+        padding: 7.8%;
+    }
+
+    .text-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* _____________________
+
+    Вступительный блок
+_____________________ */
+
+    .in-general-block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .in-general__img_type_desk {
+        display: none;
+    }
+
+    .in-general__img_type_mobile {
+        display: block;
+    }
+
+    .in-general-block__text-block {
+        border-top: 0px;
+    }
+
+    /* _____________________
+
+    Блок с табами
+_____________________ */
+    .tabs-triggers__logo_1 {
+        width: 65%;
+    }
+
+    .tabs-triggers__logo_2 {
+        width: 90%;
+    }
+
+    .tabs-triggers__item {
+        display: flex;
+        height: 84px;
+    }
+
+    .tabs-content__item {
+        flex-direction: column;
+    }
+
+    .tabs-content__text {
+        width: 100%;
+    }
+
+    .tabs-content__img {
+        width: 100%;
+        margin-bottom: 7.8%;
+    }
+
+    .tabs-content__button-wrap {
+        margin-top: 28px;
+    }
+
+    .tabs-content__button {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4% 0;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .br-desk {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 4.6%;
+    }
+
+    .tabs-triggers__item {
+        display: flex;
+        height: 64px;
+    }
+}

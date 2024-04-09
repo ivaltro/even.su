@@ -1,0 +1,155 @@
+@media screen and (max-width: 575px) {
+    .body {
+        padding-top: 50px;
+    }
+
+    .body.lock {
+        overflow: hidden;
+    }
+/* _____________________
+
+    Скроллбар
+_____________________ */
+
+/* ::-webkit-scrollbar {
+    width: 3px;
+    background-color:#2271B3;
+
+}  */
+    /* _____________________
+
+    Шапка
+_____________________ */
+
+    header {
+        height: 50px;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .header {
+        height: 45px;
+    }
+
+    .header::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.25);
+        z-index: 1;
+    }
+
+    .header__nav {
+        display: block !important;
+    }
+
+    .header__nav-item {
+        margin-left: 18px;
+        margin-bottom: 15px;
+    }
+
+    .header__logo {
+        width: 100px;
+        z-index: 1;
+    }
+
+    .header__burger {
+        display: block;
+        z-index: 1;
+    }
+
+    .header__nav-item_active::after {
+        content: "";
+        height: 0px !important;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: #F0F8FF;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        transition-duration: 0.5s;
+    }
+
+    .header__menu.active::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.60);
+    }
+
+    .header__menu.active {
+        left: 0;
+        transition-duration: 0.5s;
+    }
+
+    /* _____________________
+
+    Подвал
+_____________________ */
+
+    .footer,
+    .footer__content {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .scroll-up {
+        right: 20px;
+        bottom: 70px;
+    }
+    .custom-select {
+        display: none;
+    }
+
+/* _____________________
+
+    Выбор языка на мобильном устройстве
+
+_____________________ */
+
+.header__lng {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0;
+    left: 18px;
+    bottom: 30px;
+    color: #2271B3;
+}
+.header__lng .active {
+    font-weight: 500;
+    position: relative;
+}
+/* .header__lng .active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -2px;
+    background-color: #2271B3;
+} */
+}

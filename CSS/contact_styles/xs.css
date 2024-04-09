@@ -1,0 +1,202 @@
+  @media screen and (max-width: 575px) {
+
+      .link_lifting {
+          position: relative;
+          bottom: 3px;
+      }
+
+      .card__title,
+      .card__geo {
+          margin-bottom: 7px;
+      }
+
+      .content_screen_mobile {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .content-wrap {
+          margin: 0px 0px 10px 0px;
+      }
+
+      .container {}
+
+/* _____________________
+
+    Карточка
+_____________________ */
+
+      .card {
+          padding: 20px 10px;
+          border: 0px;
+          border-bottom: 1px solid #b0cce2;
+      }
+
+      .card__scroll {
+          padding: 1px 8px 1px 0px;
+          overflow-x: hidden;
+          overflow-y: scroll;
+          height: 50vh;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .wrapper__phone-and-contact {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 16px;
+      }
+
+/* _____________________
+
+    Заголовок
+_____________________ */
+
+      .card__title-heading {
+          font-size: 16px;
+          margin-bottom: 2px;
+      }
+
+/* _____________________
+
+    Иконки
+_____________________ */
+
+      .card__icon-container {
+          width: 30px;
+          margin-right: 0px;
+      }
+
+      .card__geo-icon {
+          width: 15px;
+      }
+
+      .card__e-mail-icon {
+          width: 20px;
+      }
+
+      .card__phone-icon {
+          width: 15px;
+      }
+
+/* _____________________
+
+    Время работы
+_____________________ */
+
+      .card__geo-time {
+          font-size: 13px;
+      }
+
+/* _____________________
+
+    Адрес
+_____________________ */
+
+      .card__geo-adress {
+          width: 50px;
+          font-size: 12px;
+          width: 100%;
+      }
+
+      .card__geo-icon-metro,
+      .card__geo-name-metro {
+          margin-right: 6px;
+      }
+
+      .card__geo-adress,
+      .card__geo-time {
+          margin-bottom: 2px;
+      }
+
+      .card__geo-name-metro {
+          font-size: 12px;
+      }
+
+/* _____________________
+
+    Телефон, эл. почта, сайт
+_____________________ */
+
+      .card__phone,
+      .card__e-mail,
+      .card__title-site {
+          font-size: 12px;
+      }
+
+/* _____________________
+
+    Разделитель
+_____________________ */
+
+      .separator {
+          display: none;
+      }
+
+/* _____________________
+
+    Кнопка
+_____________________ */
+
+      .card__button {
+          padding: 9px 18px;
+          font-size: 12px;
+      }
+
+/* _____________________
+
+    Размеры логотипов карточек
+_____________________ */
+
+      .card__title-logo_even {
+          width: 30px;
+      }
+
+      .card__title-logo_shaft {
+          width: 22px;
+      }
+
+      .card__title-logo_titan {
+          width: 17px;
+      }
+
+/* _____________________
+
+    Пагинация
+_____________________ */
+
+      .pagination {
+          padding: 20px 0px;
+      }
+
+      .pagination__item {
+          margin-right: 11px;
+      }
+
+      .pagination__item_active {
+          height: 15px;
+      }
+
+      .pagination__item_disabled {
+          height: 10px;
+      }
+
+      .pagination__item_last {
+          margin-right: 0px;
+      }
+
+/* _____________________
+
+    Карта
+_____________________ */
+
+      .container__map {
+          height: 40vh;
+      }
+  }
+
+  @media screen and (max-width: 465px) {
+      .wrapper__phone-and-contact {
+          gap: 10px;
+      }
+  }

@@ -1,0 +1,41 @@
+@media screen and (min-width: 992px) {
+    .slider {
+        /* max-width: 1920px; */
+        background-color: #4E8DC2;
+    }
+
+    .slider__img {
+        height: 378px;
+    }
+
+    .slider__wrapper {
+        height: 141px;
+    }
+
+    /* .banner__button {
+        width: unset;
+        padding: 3% 5%;
+        font-size: 20px;
+    } */
+    .banner__button-wrap {
+        gap: 15%;
+    }
+
+    .download {
+        font-size: 18px;
+    }
+
+    .download__img {
+        width: 30px;
+    }
+
+    .slider__dot {
+        width: 140px;
+        height: 96px;
+    }
+
+    .active-dot {
+        width: 200px;
+        height: 141px;
+    }
+}

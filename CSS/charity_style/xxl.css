@@ -1,0 +1,44 @@
+@media screen and (min-width: 1400px) {
+    /* _____________________
+
+    Общие
+_____________________ */
+
+    .inner {
+        padding: 80px 90px;
+    }
+
+    .back {
+        background-color: aqua;
+    }
+
+    /* _____________________
+
+    Блок с табами
+_____________________ */
+    .tabs-triggers__item {
+        display: flex;
+        height: 136px;
+    }
+
+    .tabs-triggers__logo_1 {
+        height: 64px;
+    }
+
+    .tabs-triggers__logo_2 {
+        height: 76px;
+    }
+
+    .tabs-content__text {
+        width: 486px;
+    }
+
+    .tabs-content__img {
+        height: 471px;
+        width: auto;
+    }
+
+    .tabs-content__button-wrap {
+        margin-top: 32px;
+    }
+}

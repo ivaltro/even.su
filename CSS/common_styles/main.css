@@ -1,0 +1,378 @@
+/* _____________________
+
+    Глобальные
+_____________________ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Helveticaneuecyr";
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* _____________________
+
+    Скроллбар
+_____________________ */
+
+/* ::-webkit-scrollbar-thumb {
+    background-color:#2271B3;
+} */
+
+/* _____________________
+
+    Текст
+_____________________ */
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.last-p {
+    margin-bottom: 0px;
+}
+
+.text {
+    font-weight: 300;
+}
+
+/* _____________________
+
+    Ссылки
+_____________________ */
+
+a {
+    align-items: center;
+}
+
+.main-link {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+.accent {
+    color: #2271B3;
+}
+.bold {
+    font-weight: 500;
+}
+.accent:visited {
+    color: #2271B3;
+}
+.button-link.accent:hover {
+    color: #4E8DC2;
+}
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #4E8DC2;
+}
+
+a:visited:hover {
+    color: #4E8DC2;
+}
+
+/* _____________________
+
+    Выравнивание
+_____________________ */
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* _____________________
+
+    Сброс отступов
+_____________________ */
+
+.margin-clear-top {
+    margin-top: 0 !important;
+}
+
+.border-clear-top {
+    border-top: 0px !important;
+}
+
+.padding-clear {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* _____________________
+
+    Шапка
+_____________________ */
+
+header {
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.25);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    height: 100%;
+}
+
+/* header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D0E9FF;
+} */
+.header__burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+
+.header__burger span {
+    content: "";
+    background-color: #2271B3;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    transition-duration: 0.3s;
+}
+
+.header__burger::before,
+.header__burger::after {
+    content: "";
+    background-color: #2271B3;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition-duration: 0.3s;
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.header__burger.active span {
+    transform: scale(0);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0px;
+    position: relative;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__nav-item {
+    list-style-type: none;
+    display: inline-block;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item_active {
+    position: relative;
+}
+
+.header__nav-item_active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #2271B3;
+}
+
+.header__nav-item-link {
+    color: #2271B3;
+    text-decoration: none;
+}
+
+.header__nav-item-link_active {
+    font-weight: 500;
+}
+
+.header__nav-item-link_hover:hover {
+    color: #4E8DC2;
+}
+
+
+/* _____________________
+
+    Подвал
+_____________________ */
+
+.footer {
+    background-color: #1D334A;
+    width: 100%;
+}
+
+.footer__text {
+    font-weight: 300;
+    color: white;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* _____________________
+
+    Кнопка вверх
+_____________________ */
+
+.scroll-up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    ;
+    border-radius: 100%;
+    cursor: pointer;
+    visibility: hidden;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scroll-up__content {
+    clip-path: polygon(50.00% 0.00%, 0% 100%, 100% 100%);
+    background-color: #acacac;
+    width: 20px;
+    height: 18px;
+}
+
+.scroll-up--active {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 0.1;
+    z-index: 99;
+}
+
+/* Выпадающий список */
+
+.custom-select {
+    flex-direction: column;
+    position: relative;
+    color: #2271B3;
+}
+
+.select-text {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+
+}
+
+.select-options {
+    position: absolute;
+    background-color: #f8f8f8;
+    border: 1px solid #DAECFC;
+    padding: 0;
+    right: 0;
+    margin-top: -1px;
+    list-style: none;
+    display: none;
+    transition-timing-function: linear;
+}
+
+.select-options a {
+    color: #2271B3;
+    text-decoration: none;
+}
+
+.select-options li {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.select-options li:hover {
+    background-color: #f4faff;
+    cursor: pointer;
+}
+
+.select-arrow {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #2271B3;
+    width: 14px;
+    height: 10px;
+    transform: rotate(180deg);
+}

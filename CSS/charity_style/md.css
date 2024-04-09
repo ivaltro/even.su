@@ -1,0 +1,98 @@
+@media screen and (min-width: 768px) {
+
+    /* _____________________
+
+    Общие
+_____________________ */
+
+    .content-wrap {
+        gap: 54px;
+        margin: 54px 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 14px;
+    }
+
+    .text {
+        font-size: 0.875rem;
+    }
+
+    .inner {
+        padding: 32px 24px;
+    }
+
+    .text-block {
+        border-right: 0px;
+    }
+
+    /* _____________________
+
+    Вступительный блок
+_____________________ */
+
+    .in-general-block {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .in-general-block__img-container {
+        flex-basis: 50%;
+    }
+
+    .in-general-block__text-block {
+        border-right: 0px;
+        flex-basis: 50%;
+    }
+
+    .in-general-block__img {
+        background-image: url(/images/social_project/in-general-block__img_md.jpg);
+    }
+
+    .in-general__img_type_desk {
+        display: block;
+    }
+
+    .in-general__img_type_mobile {
+        display: none;
+    }
+
+    /* _____________________
+
+    Блок с табами
+_____________________ */
+    .tabs-triggers__logo_1 {
+        height: 44px;
+    }
+
+    .tabs-triggers__logo_2 {
+        height: 48px;
+    }
+
+    .tabs-triggers__item {
+        display: flex;
+        height: 82px;
+    }
+
+    .tabs-content__item {
+        flex-direction: row;
+    }
+
+    .tabs-content__text {
+        width: 324px;
+    }
+
+    .tabs-content__img {
+        height: 252px;
+        width: auto;
+    }
+
+    .tabs-content__button-wrap {
+        margin-top: 20px;
+    }
+
+    .tabs-content__button {
+        font-size: 0.875rem;
+    }
+}

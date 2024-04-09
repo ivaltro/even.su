@@ -1,0 +1,25 @@
+@font-face {
+    font-style: light;
+    font-weight: 300;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-light.ttf");
+}
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-roman.ttf");
+}
+@font-face {
+    font-style: medium;
+    font-weight: 500;
+    font-family: "Helveticaneuecyr";
+    src: url("/fonts/helveticaneuecyr-medium.ttf");
+   
+}
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: OpenGost;
+    src: url(/fonts/OpenGostTypeA-Regular.ttf);
+}

@@ -1,0 +1,71 @@
+@media screen and (min-width: 1400px) {
+
+    .text-block__heading {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .text-block__text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .text-block {
+        width: 560px;
+        padding: 48px;
+    }
+
+    .banner__button {
+        padding: 3% 6%;
+        font-size: 18px;
+    }
+
+    .download {
+        font-size: 17px;
+    }
+
+    .slider__wrapper {
+        height: 200px;
+    }
+
+    .slider__img {
+        height: 640px;
+    }
+
+    .slider__dot {
+        width: 193px;
+        height: 134px;
+        background-color: #FFFFFF;
+    }
+
+    .active-dot {
+        height: 200px;
+        width: 298px;
+    }
+
+    .slider__img.pic-1 {
+        background-image: url(/images/about_us/banner/xxl/GC-EVEN.jpg);
+    }
+
+    .slider__img.pic-2 {
+        background-image: url(/images/about_us/banner/xxl/EVEN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-3 {
+        background-image: url(/images/about_us/banner/xxl/SHAFT.jpg);
+    }
+
+    .slider__img.pic-4 {
+        background-image: url(/images/about_us/banner/xxl/TITAN.jpg);
+    }
+
+    .slider__img.pic-5 {
+        background-image: url(/images/about_us/banner/xxl/TITAN-TRUCK.jpg);
+    }
+
+    .slider__img.pic-6 {
+        background-image: url(/images/about_us/banner/xxl/TITAN-BIKE.jpg);
+    }
+
+}
